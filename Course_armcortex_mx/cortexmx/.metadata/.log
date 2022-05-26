@@ -5508,3 +5508,54 @@ Binding(CTRL+G,
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-05-20 15:27:08.393
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+!SESSION 2022-05-23 18:11:42.593 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-05-23 18:11:54.289
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-05-23 18:11:54.376
+!MESSAGE Log4j initialized with config file C:\learning\CortexMxProcessor\Course_armcortex_mx\cortexmx\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-05-23 18:12:03.239
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-25 15:20:50.591
+!MESSAGE Indexed '005AccessLevels' (2 sources, 53 headers) in 1.01 sec: 1,947 declarations; 2,809 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-25 15:34:07.474
+!MESSAGE Indexed '005AccessLevels' (3 sources, 55 headers) in 0.289 sec: 2,108 declarations; 2,965 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.039%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-05-25 15:34:45.527
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-25 15:55:32.645
+!MESSAGE Indexed '006T-bit' (3 sources, 53 headers) in 0.47 sec: 1,949 declarations; 2,811 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-25 15:55:58.325
+!MESSAGE Indexed '006T-bit' (3 sources, 53 headers) in 0.224 sec: 1,951 declarations; 2,820 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-05-25 16:04:24.036
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-05-25 16:07:54.526
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-05-25 16:15:50.328
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-05-25 16:20:06.124
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-25 17:08:17.003
+!MESSAGE Indexed '007BitBanding' (3 sources, 53 headers) in 0.25 sec: 1,949 declarations; 2,811 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-25 17:08:51.261
+!MESSAGE Indexed '007BitBanding' (3 sources, 0 headers) in 0.012 sec: 69 declarations; 43 references; 11 unresolved inclusions; 0 syntax errors; 36 unresolved names (24%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-05-25 17:15:03.932
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8

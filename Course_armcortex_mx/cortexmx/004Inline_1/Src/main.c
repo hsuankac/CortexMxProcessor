@@ -24,7 +24,7 @@
 
 int main(void)
 {
-#if 0
+#if 1
 	__asm volatile("LDR R1, =#0x20001000");
 	__asm volatile("LDR R2, =#0x20001004");
 	// LDR = LOAD
@@ -35,6 +35,7 @@ int main(void)
 	// STR = STORE
 	__asm volatile("STR R0, [R1]");
 #endif
+#if 0
 	// example1: move the c variable val to arm register r0
 	int val = 50;
 	__asm volatile("MOV R0, %0": :"r"(val));
@@ -51,7 +52,8 @@ int main(void)
 	int p1, *p2;
 	p2 = (int*)0x20000008;
 	__asm volatile("LDR %0, [%1]": "=r"(p1): "r"(p2));
-
+#endif
     /* Loop forever */
 	for(;;);
+
 }
