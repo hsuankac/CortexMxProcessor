@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003OperationModes,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005AccessLevels,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006T-bit,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004Inline_1,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007BitBanding
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003OperationModes,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005AccessLevels,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006T-bit,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004Inline_1,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007BitBanding,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008Stack
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld/activeLaunchTarget=null\:---
