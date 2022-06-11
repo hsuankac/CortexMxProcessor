@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="TIM2"/>
+		<item key="selection" value="SVC"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="SVC"/>
+			<item value="UsageFault_Handler_c"/>
+			<item value="busfault"/>
+			<item value="bus "/>
 			<item value="TIM2"/>
 			<item value="TIMER2"/>
 			<item value="USART3"/>
 			<item value="_estack"/>
-			<item value="SVC"/>
 			<item value="ITM_SendChar"/>
 			<item value="write"/>
 		</list>
