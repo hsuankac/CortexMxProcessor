@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="SVC"/>
+		<item key="selection" value="task_delay"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="SVC"/>
-			<item value="UsageFault_Handler_c"/>
-			<item value="busfault"/>
-			<item value="bus "/>
-			<item value="TIM2"/>
-			<item value="TIMER2"/>
-			<item value="USART3"/>
-			<item value="_estack"/>
-			<item value="ITM_SendChar"/>
-			<item value="write"/>
+			<item value="task_delay"/>
+			<item value="PendSV_Handler"/>
+			<item value="get_psp_value"/>
+			<item value="update_next_task"/>
+			<item value="save_psp_value"/>
+			<item value="init_tasks_stack"/>
+			<item value="enable_processor_fault"/>
+			<item value="init_scheduler_stack"/>
+			<item value="switch_sp_to_psp"/>
+			<item value="unblock_tasks"/>
+			<item value="SysTick_Handler"/>
+			<item value="update_next"/>
+			<item value="current_task"/>
+			<item value="idle_task"/>
+			<item value="task1_handler"/>
 		</list>
 		<list key="replacehistory">
 		</list>

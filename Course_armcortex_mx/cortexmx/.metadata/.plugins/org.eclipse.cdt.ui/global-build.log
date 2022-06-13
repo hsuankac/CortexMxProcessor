@@ -1,14 +1,21 @@
-17:00:11 **** Incremental Build of configuration Debug for project 013SVC_number ****
+10:57:52 **** Incremental Build of configuration Debug for project 015Task_scheduler ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "013SVC_number.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\learning\CortexMxProcessor\Course_armcortex_mx\cortexmx\013SVC_number\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="013SVC_number.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 013SVC_number.elf
+arm-none-eabi-gcc "../Src/led_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/led_main.d" -MT"Src/led_main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/led_main.o"
+arm-none-eabi-gcc -o "015Task_scheduler.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\learning\CortexMxProcessor\Course_armcortex_mx\cortexmx\015Task_scheduler\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="015Task_scheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 015Task_scheduler.elf
  
-arm-none-eabi-size   013SVC_number.elf 
-arm-none-eabi-objdump -h -S  013SVC_number.elf  > "013SVC_number.list"
+arm-none-eabi-size   015Task_scheduler.elf 
+arm-none-eabi-objdump -h -S  015Task_scheduler.elf  > "015Task_scheduler.list"
    text	   data	    bss	    dec	    hex	filename
-   5656	    108	   1588	   7352	   1cb8	013SVC_number.elf
+   5292	    112	   1672	   7076	   1ba4	015Task_scheduler.elf
 Finished building: default.size.stdout
-Finished building: 013SVC_number.list
+Finished building: 015Task_scheduler.list
  
+ 
+10:58:03 **** Incremental Build of configuration Debug for project 015Task_scheduler ****
+make -j8 all 
+arm-none-eabi-size   015Task_scheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5292	    112	   1672	   7076	   1ba4	015Task_scheduler.elf
+Finished building: default.size.stdout
  
