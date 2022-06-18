@@ -1057,7 +1057,7 @@ void SysTick_Handler(void)
 
 08000784 <HardFault_Handler>:
 
-//2. implement the fault handlers
+// Implement the fault handlers
 void HardFault_Handler(void)
 {
  8000784:	b580      	push	{r7, lr}
@@ -1071,7 +1071,6 @@ void HardFault_Handler(void)
 
 08000794 <MemManage_Handler>:
 }
-
 
 void MemManage_Handler(void)
 {

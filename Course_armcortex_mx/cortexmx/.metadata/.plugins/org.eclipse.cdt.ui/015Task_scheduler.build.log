@@ -1,10 +1,21 @@
-10:58:03 **** Incremental Build of configuration Debug for project 015Task_scheduler ****
+16:29:09 **** Build of configuration Debug for project 015Task_scheduler ****
 make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/led_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/led_main.d" -MT"Src/led_main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/led_main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "015Task_scheduler.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\learning\CortexMxProcessor\Course_armcortex_mx\cortexmx\015Task_scheduler\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="015Task_scheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 015Task_scheduler.elf
+ 
 arm-none-eabi-size   015Task_scheduler.elf 
+arm-none-eabi-objdump -h -S  015Task_scheduler.elf  > "015Task_scheduler.list"
    text	   data	    bss	    dec	    hex	filename
    5292	    112	   1672	   7076	   1ba4	015Task_scheduler.elf
 Finished building: default.size.stdout
  
+Finished building: 015Task_scheduler.list
+ 
 
-10:58:05 Build Finished. 0 errors, 0 warnings. (took 1s.495ms)
+16:29:15 Build Finished. 0 errors, 0 warnings. (took 5s.799ms)
 

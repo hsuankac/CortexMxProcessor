@@ -19,5 +19,5 @@
 ../Src/led_main.c:301:6:unblock_tasks	16	static
 ../Src/led_main.c:315:6:SysTick_Handler	16	static
 ../Src/led_main.c:327:6:HardFault_Handler	8	static
-../Src/led_main.c:334:6:MemManage_Handler	8	static
-../Src/led_main.c:340:6:BusFault_Handler	8	static
+../Src/led_main.c:333:6:MemManage_Handler	8	static
+../Src/led_main.c:339:6:BusFault_Handler	8	static
