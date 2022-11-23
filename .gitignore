@@ -3,3 +3,5 @@
 *.css
 *.idea
 venv
+*/.metadata
+*/Debug
