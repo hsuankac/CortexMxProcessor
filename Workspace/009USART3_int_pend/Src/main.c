@@ -35,6 +35,7 @@ int main(void)
 	// 1. Manually pend the pending bit for the USART3 IRQ number in NVIC
 	uint32_t *pISR1 = (uint32_t*) 0XE000E204;
 	*pISR1 |= (1 << (USART_IRQNO % 32));
+
 	// 2. Enable the USART3 IRQ number in NVIC
 	uint32_t *pISER1 = (uint32_t*) 0xE000E104;
 	*pISER1 |= (1 << (USART_IRQNO % 32));

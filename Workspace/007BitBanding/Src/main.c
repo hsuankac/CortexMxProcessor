@@ -19,7 +19,7 @@
 #include <stdint.h>
 
 #define ALIAS_BASE 0x22000000U
-#define BITBAND_BASE 0x20000200U
+#define BITBAND_BASE 0x20000000U
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
@@ -38,7 +38,7 @@ int main(void)
 	*ptr = 0xff;
 
 	// bit band method
-	uint8_t* alias_addr = (uint8_t*) (ALIAS_BASE + (32 * (BITBAND_BASE - 0x20000000)) + 7 * 4);
+	uint8_t* alias_addr = (uint8_t*) (ALIAS_BASE + (32 * (0x20000200 - BITBAND_BASE)) + 7 * 4);
 	// clearing 7th bit of address 0x20000200
 	*alias_addr = 0;
 

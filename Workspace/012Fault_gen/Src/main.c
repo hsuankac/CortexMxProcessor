@@ -36,6 +36,8 @@ int main(void)
 	*pSRAM = 0xFFFFFFFF;
 
 	void (*some_address) (void);
+
+	// Plus one to take care of T-bit
 	some_address = (void*) 0x20001001;
 	some_address();
 
@@ -70,7 +72,7 @@ __attribute__((naked)) void UsageFault_Handler(void)
 	__asm ("MRS r0, MSP");
 
 	// Jump to the UsageFault_Handler_c function call, r0 will become the first argument according to the
-	// procedure call standard for the arm architecture
+	// procedure call standard for the arm architecture (AAPCS)
 	__asm ("B UsageFault_Handler_c");
 }
 

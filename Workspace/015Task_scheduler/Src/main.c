@@ -98,9 +98,13 @@ void task4_handler(void)
 
 void init_systick_timer(uint32_t tick_hz)
 {
+	// SysTick Reload Value Register
 	uint32_t *pSRVR = (uint32_t*)0xE000E014;
+
+	// SysTick Control and Status Register
 	uint32_t *pSCSR = (uint32_t*)0xE000E010;
 
+	// Calculate the reload value
 	uint32_t count_value = (SYSTICK_TIM_CLOCK / tick_hz) - 1;
 
 	// Clear the value of SVR
@@ -112,7 +116,6 @@ void init_systick_timer(uint32_t tick_hz)
 	// Do some settings
 	*pSCSR |= (1 << 1); // Enables SysTick exception request
 	*pSCSR |= (1 << 2); // Indicates the clock source, processor clock source
-
 	// Enable the systick
 	*pSCSR |= (1 << 0); // Enables the counter
 }
@@ -131,7 +134,8 @@ void init_tasks_stack(void)
 		*pPSP = task_handlers[i];
 
 		pPSP--; // LR
-		*pPSP = 0xFFFFFFFD;
+		*pPSP = 0xFFFFFFFD; // Return to Thread mode, exception return uses non-floating-point state from
+		//the PSP and execution uses PSP after return
 
 		for(int j=0; j < 13; j ++)
 		{
@@ -153,7 +157,7 @@ __attribute ((naked)) void init_scheduler_stack(uint32_t sched_top_of_stack)
 void enable_processor_fault(void)
 {
 	//1. enable all configurable exceptions like usage fault, mem manage fault and bus fault
-
+	// System Handler Control and State Register
 	uint32_t *pSHCSR = (uint32_t*)0xE000ED24;
 
 	*pSHCSR |= ( 1 << 16); //mem manage
@@ -182,7 +186,7 @@ __attribute((naked)) void switch_sp_to_psp(void)
 	// 1. Initialize the PSP with task1 stack start address
 	// get the value of PSP of current task
 	__asm volatile("PUSH {LR}"); // preserve LR which connect back to main
-	__asm volatile("BL get_psp_value");
+	__asm volatile("BL get_psp_value"); // branch with link so we can go back to this function
 	__asm volatile("MSR PSP, R0"); // initialize PSP
 	__asm volatile("POP {LR}"); // pops back LR value
 
@@ -224,7 +228,6 @@ void HardFault_Handler(void)
 	printf("Exception : Hardfault\n");
 	while(1);
 }
-
 
 void MemManage_Handler(void)
 {

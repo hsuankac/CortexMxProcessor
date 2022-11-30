@@ -14,6 +14,7 @@
 #include<stdio.h>
 #include<stdint.h>
 
+
 /* This function executes in THREAD MODE of the processor */
 void generate_interrupt()
 {

@@ -25,7 +25,6 @@ int32_t add_numbers(int32_t x , int32_t y )
 
 }
 
-
 int32_t sub_numbers(int32_t x , int32_t y )
 {
     int32_t res;
@@ -59,13 +58,13 @@ int main(void)
     res = add_numbers(40, -90);
     printf("Add result = %ld\n",res);
 
-    res = sub_numbers(25,150);
+    res = sub_numbers(25, 150);
     printf("Sub result = %ld\n",res);
 
-    res = mul_numbers(374,890);
+    res = mul_numbers(374, 890);
     printf("mul result = %ld\n", res);
 
-    res = div_numbers(67,-3);
+    res = div_numbers(67, -3);
     printf("div result = %ld\n",res);
 
     for(;;);
@@ -74,7 +73,7 @@ int main(void)
 
 __attribute__( ( naked ) ) void SVC_Handler( void )
 {
-    __asm ("MRS r0,MSP");
+    __asm ("MRS r0, MSP");
     __asm( "B SVC_Handler_c");
 }
 

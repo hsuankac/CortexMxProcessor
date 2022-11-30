@@ -18,6 +18,7 @@
 
 #include <stdint.h>
 #include <stdio.h>
+
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
@@ -42,7 +43,7 @@ int main(void)
 	uint32_t data;
 	__asm volatile ("MOV %0, R0": "=r"(data) : :);
 
-	printf("data is: %ld", data);
+	printf("data is: %ld\n", data);
     /* Loop forever */
 	for(;;);
 }
@@ -54,6 +55,7 @@ __attribute__((naked)) void SVC_Handler(void)
 
 }
 
+// From the AAPCS, R0 will store in first argument of function calls
 void SVC_Handler_c(uint32_t *pBaseStackFrame)
 {
 	printf("In SVC handler\n");

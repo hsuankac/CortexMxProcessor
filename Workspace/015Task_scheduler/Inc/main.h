@@ -9,6 +9,7 @@
 #define MAIN_H_
 
 #define MAX_TASKS           5
+
 /* Some stack memory calculation */
 #define SIZE_TASK_STACK     1024U
 #define SIZE_SCHED_STACK    1024U
@@ -25,11 +26,11 @@
 #define SCHED_STACK_START   ((SRAM_END) - (5 * SIZE_TASK_STACK))
 
 #define TICK_HZ             1000U
-#define HSI_CLOCL           16000000U
-#define SYSTICK_TIM_CLOCK   HSI_CLOCL
+#define HSI_CLOCK           16000000U
+#define SYSTICK_TIM_CLOCK   HSI_CLOCK
 #define DUMMY_XPSR          0x01000000U
 
-#define TASK_READY_STATE  0x00
+#define TASK_READY_STATE    0x00
 #define TASK_BLOCKED_STATE  0xFF
 
 #define INTERRUPT_DISABLE() do{__asm volatile("MOV R0, #0x1"); __asm volatile("MSR PRIMASK, R0");} while(0)

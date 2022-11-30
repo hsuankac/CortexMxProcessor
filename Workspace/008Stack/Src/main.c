@@ -23,15 +23,15 @@
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
-#define SRAM_START 0x20000000U
-#define SRAM_SIZE (128 * 1024)
-#define SRAM_END (SRAM_START + SRAM_SIZE)
-#define STACK_START SRAM_END
+#define SRAM_START               	0x20000000U
+#define SRAM_SIZE 					(128 * 1024)
+#define SRAM_END 					((SRAM_START) + (SRAM_SIZE))
+#define STACK_START 				SRAM_END
 
-#define STACK_MSP_START STACK_START
-#define STACK_MSP_END STACK_MSP_START + 512
+#define STACK_MSP_START 			STACK_START
+#define STACK_MSP_END 				STACK_MSP_START + 512
 
-#define STACK_PSP_START STACK_MSP_END
+#define STACK_PSP_START 			STACK_MSP_END
 
 
 int fun_add(int a, int b, int c, int d)

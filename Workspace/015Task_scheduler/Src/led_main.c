@@ -314,6 +314,7 @@ void unblock_tasks(void)
 
 void SysTick_Handler(void)
 {
+	// Interrupt Control and State Register
 	uint32_t *pICSR = (uint32_t*) 0xE000ED04;
 	update_global_tick_count();
 	unblock_tasks();

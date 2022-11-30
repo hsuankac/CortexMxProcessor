@@ -37,7 +37,7 @@ int main(void)
 	int val = 50;
 	__asm volatile("MOV R0, %0": :"r"(val));
 
-	// move the content of CONTROL  register to c variable control_reg
+	// move the content of CONTROL register to c variable control_reg
 	int control_reg;
 	__asm volatile("MRS %0, CONTROL": "=r"(control_reg));
 

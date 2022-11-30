@@ -1,7 +1,5 @@
-
 #include<stdint.h>
 #include "led.h"
-
 
 
 void delay(uint32_t count)
@@ -35,9 +33,6 @@ void led_init_all(void)
     led_off(LED_ORANGE);
     led_off(LED_RED);
     led_off(LED_BLUE);
-
-
-
 }
 
 void led_on(uint8_t led_no)
